@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#4E35A3">
+
+        <EditText
+            android:id="@+id/passwordLog"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dsd"
+            android:drawablePadding="30dp"
+            android:ems="10"
+            android:hint="Please enter your password"
+            android:inputType="textPassword"
+
+            android:paddingStart="10dp"
+            android:textSize="14sp"
+
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailLogin"
+            app:passwordToggleEnabled="true" />
+
+        <EditText
+            android:id="@+id/emailLogin"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+
+
+            android:layout_marginTop="36dp"
+
+
+            android:background="@drawable/dsd"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+
+
+            android:paddingStart="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signin" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="217dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="28dp"
+            android:background="#AD9CE0"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordLog" />
+
+        <TextView
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/title"
+            android:text="Log in to your account"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/ForgotBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:fontFamily="sans-serif-black"
+            android:text="Forgot you password?"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
